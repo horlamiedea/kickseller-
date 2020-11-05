@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecoms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Products</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+            <img src="images/main-logo.png" alt=""  width="125px">
+          </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+          <img src="images/shopping-cart.png" alt="" width="20px" height="20px">
+        </a>
+          <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Price Low to High</option>
+          <option>Price High to Low</option>
+          <option>By Popularity</option>
+          <option>By Rating</option>
+          <option>By Sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/adidas-d2.jpg" alt="">
+          <h4>Adidas Superstar</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $40.08 - 43.84</h5>
+          <p class="approx">Approx.NGN 15,654.86 - 16,453.98</p>
+        </div>
+        <div class="col-4">
+          <img src="images/nike-c2.jpg" alt="">
+          <h4>Nike Air More<br>Uptempo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $64.48</h5>
+          <p class="approx">Approx.NGN 24,587.78</p>
+        </div>
+        <div class="col-4">
+          <img src="images/vans-b2.jpg" alt="">
+          <h4>Vans X Ape-man<br>camouflage joint low</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $26.96 - 27.98</h5>
+          <p class="approx">Approx.NGN 10,280.50 - 10,669.45</p>
+        </div>
+        <div class="col-4">
+          <img src="images/adidas-a3.jpg" alt="">
+          <h4>Adidas NEO Label</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $60.06 - 84.16</h5>
+          <p class="approx">Approx.NGN 22,904.86 - 32,092.98</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="images/nike-b3.jpg" alt="">
+          <h4>NIKE AIR MAX FUSION</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $145.00</h5>
+          <p class="approx">Approx.NGN 55,245.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/vans-c1.jpg" alt="">
+          <h4>Vans Checkerboard</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $40.08 - 43.84</h5>
+          <p class="approx">Approx.NGN 15,270.48 - 16,703</p>
+        </div>
+        <div class="col-4">
+          <img src="images/adidas-e2.jpg" alt="">
+          <h4>Adidas Originals<br>EQT BASK ADV</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $142.10</h5>
+          <p class="approx">Approx.NGN 54,140.10</p>
+        </div>
+        <div class="col-4">
+          <img src="images/nike-e2.jpg" alt="">
+          <h4>Nike Air Max 97</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $48.98</h5>
+          <p class="approx">Approx.NGN 18,661.38</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="images/vans-d1.jpg" alt="">
+          <h4>Vans Checkerboard</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $40.08 - 44.26</h5>
+          <p class="approx">Approx.NGN 15,654.86 - 16,853.98</p>
+        </div>
+        <div class="col-4">
+          <img src="images/nike-d2.jpg" alt="">
+          <h4>NIKE OFF-WHITE<br>x Nike Air VaporMax</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $49.68</h5>
+          <p class="approx">Approx.NGN 18,987.78</p>
+        </div>
+        <div class="col-4">
+          <img src="images/adidas-f2.jpg" alt="">
+          <h4>Adidas Originals<br>FORUM MID RS XL</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $139.93</h5>
+          <p class="approx">Approx.NGN 53,313.33</p>
+        </div>
+        <div class="col-4">
+          <img src="images/vans-e2.jpg" alt="">
+          <h4>Vans Old Skool</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $37.75</h5>
+          <p class="approx">Approx.NGN 14,382.75</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="images/adidas-g2.jpg" alt="">
+          <h4>Adidas SUPERSTAR</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $121.16</h5>
+          <p class="approx">Approx.NGN 46,161.98</p>
+        </div>
+        <div class="col-4">
+          <img src="images/nike-g2.jpg" alt="">
+          <h4>Nike Air Max 97</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $49</h5>
+          <p class="approx">Approx.NGN 19,782.23</p>
+        </div>
+        <div class="col-4">
+          <img src="images/vans-f2.jpg" alt="">
+          <h4>VANS Summer Mid-top</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5>US $41.75 - 44.47</h5>
+          <p class="approx">Approx.NGN 15,980.50 - 16,969.45</p>
+        </div>
+        <div class="col-4">
+          <img src="images/nike-f2.jpg" alt="">
+          <h4>NIKE Zoom 2K</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5>US $105.70 - 116.20</h5>
+          <p class="approx">Approx.NGN 40,274.86 - 44,292.98</p>
+        </div>
+
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>&#8594;</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="images/main-logo.png" alt="">
+            <p>Our purpose is to keep our customer's feet comfortabily and make
+             them happy.</p>
+          </div>
+          <div class="footer-col-2">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2020 - www.kickseller.com</p>
+      </div>
+    </div>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+        }
+        else{
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

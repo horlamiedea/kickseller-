@@ -1,0 +1,128 @@
+f<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecoms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KICKSELLER!-Carts</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+            <img src="images/main-logo.png" alt=""  width="125px">
+          </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+          <img src="images/shopping-cart.png" alt="" width="20px" height="20px">
+        </a>
+          <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="images/adidas-d2.jpg" alt="">
+                <div>
+                  <p>Adidas SUPERSTAR</p>
+                  <small>US $40.08 - 43.84</small><br>
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>US $43.84</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="images/vans-b2.jpg" alt="">
+                <div>
+                  <p>Vans X Ape-man<br>camouflage joint low</p>
+                  <small>US $26.96 - 27.98</small><br>
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>US $27.98</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="images/nike-b3.jpg" alt="">
+                <div>
+                  <p>NIKE AIR MAX FUSION</p>
+                  <small>US $145.00</small><br>
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>US $145.00</td>
+          </tr>
+        </table>
+      </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="images/main-logo.png" alt="">
+            <p>Our purpose is to keep our customer's feet comfortabily and make
+             them happy.</p>
+          </div>
+          <div class="footer-col-2">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2020 - www.kickseller.com</p>
+      </div>
+    </div>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+        }
+        else{
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+  </body>
+</html>
